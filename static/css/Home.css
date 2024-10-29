@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    max-width: 100%;
+    margin: 0 3vw 6vh 3vw;
+}
+/*=============== Styling Of intro-section ===============*/
+.intro-section {
+    display: flex;
+    overflow: hidden;
+    height: 98vh;
+    background-color: #faedeb;
+}
+.intro-section-text {
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    margin-left: 20vh;
+    margin-top: 30vh;
+}
+.Awesome {
+    position:relative;
+    top:-4vh;
+}
+.ShopCollection {
+    background-color: black;
+    width: 22vh;
+    height:6vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 0.85em;
+}
+.ShopCollection a{
+    text-decoration: none;
+    color:white;
+}
+.ShopCollection a:hover {
+    color:lightgray;
+    transition-duration: 0.3s;
+}
+.intro-section-image {
+    margin-left: 20vh;
+    background-image: url(../image/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: center;
+    overflow: hidden;
+}
+
+/* =============== Styling of products section =============== */
+.products-section-upper {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 14vh;
+}
+.summer {
+    color:rgb(75, 75, 75);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.products-section-header {
+    font-size: 2.5em;
+}
+.products-section-lower {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:2.8vh;
+    font-size: 0.85em;
+}
+.products-container {
+    position: relative;
+    width: 270px;
+    height: 329px;
+    background-size: cover;
+    transition-duration: 0.75s;
+}
+.product1 {
+    background-image: url(../image/T-ShirtName1.jpg);
+}
+.product1:hover {
+    background-image: url(../image/Pink-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.product2 {
+    background-image: url(../image/T-ShirtName10.jpg);
+}
+.product2:hover {
+    background-image: url(../image/White-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.product3 {
+    background-image: url(../image/T-ShirtName5.jpg);
+}
+.product3:hover {
+    background-image: url(../image/White-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.product4 {
+    background-image: url(../image/T-ShirtName9.jpg);
+}
+.product4:hover {
+    background-image: url(../image/Black-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.shopping-product, .shopping-view{
+    display: none;
+    border-style: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.shopping-view i {
+    padding-left: 4px;
+}
+.products-container:hover .shopping-product, .products-container:hover .shopping-view  {
+    display: inline-block; 
+    position: absolute;
+    right:12.5px; 
+    top:12.5px; 
+    width: 23px; 
+    height: 23px;
+    color: rgb(40, 40, 40); 
+    background-color: whitesmoke; 
+    border-radius: 50px; 
+    padding:2px 0 0 0;
+    transition-duration: 0.5s;
+}
+.products-container:hover .shopping-view {
+    right:12.5px; 
+    top:50px; 
+}
+.men-women {
+    color:rgb(190, 190, 190);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 1.75vh;
+}
+
+.product-price {
+    color:rgb(100, 100, 100);
+}
+.men-women, .product-name, .product-price {
+    margin-left: 2vh;
+}
+
+
+
+/*==================== Item3 ==================== */
+.Item3 {
+    margin-top: 11vh;
+    display: flex;
+    justify-content: center;
+    gap:2.8vh;
+}
+.Item3Left {
+    font-family: 'Poppins', sans-serif;
+}
+.UselessItem3Left {
+    display: grid;
+    justify-items: center;
+}
+.Item3Text1 {
+    color: rgb(175, 175, 175);
+    margin-top: 4vh;
+}
+.Item3Text2 {
+    font-size: 2.25em;
+}
+
+/* Item4 */
+.Item4 {
+    margin-top: 15vh;
+    width: 100%;
+    height: 105vh;
+    background-image: url(../image/bg-01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,0.2);
+    background-blend-mode: darken;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.UselessItem4 {
+    display: grid;
+    justify-items: center;
+}
+.Item4Text {
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Item5 */
+.Item5 {
+    margin-top: 21vh;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+.Item5Left {
+    background-color: #faedeb;
+    display: flex;
+    justify-content: center;
+}
+.Item5Image {
+    position: relative;
+    bottom: 7.25vh;
+}
+.Item5Right {
+    display: grid;
+    align-content: center;
+    gap:0.5vh;
+    position: relative;
+    left:-10vh
+}
+.Item5Text1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(75, 75, 75);
+    font-size: 0.9em;
+}
+.Item5Text2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+}
+.Item5SeeCollection {
+    background-color: black;
+    width: 27vh;
+    height:6vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 0.9em;
+    margin-top: 3.5vh;
+}
+.Item5SeeCollection a {
+    text-decoration: none;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+.Item5SeeCollection a:hover {
+    color:lightgray;
+    transition-duration: 0.3s;
+}
+
+/* =============== Styling of products section =============== */
+.product5 {
+    background-image: url(../image/T-ShirtName8.jpg);
+}
+.product5:hover {
+    background-image: url(../image/Black-TShirt.jpg);
+}
+.product6 {
+    background-image: url(../image/T-ShirtName3.jpg);
+}
+.product6:hover {
+    background-image: url(../image/Black-TShirt.jpg);
+}
+.product7 {
+    background-image: url(../image/T-ShirtName4.jpg);
+}
+.product7:hover {
+    background-image: url(../image/White-TShirt.jpg);
+}
+.product8 {
+    background-image: url(../image/T-ShirtName9.jpg);
+}
+.product8:hover {
+    background-image: url(../image/Black-TShirt.jpg);
+}
+
+/*============== Item7 ===========*/
+.Item7 {
+    margin-top: 15vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+.Item7Text1 {
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 3vh;
+}
+.Item7Text1 h4 {
+    text-align: center;
+}
+.Item7Icons {
+    margin-top: 0.7vh;
+}
+.Item7Icons i {
+    color:#fcb900;
+}
+.Item7Text2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(75, 75, 75);
+}
+
+/* =============== Styling of eighth section =============== */
+
+#eighth-section {
+    width: 76vw;
+    height: 78vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+}
+.eighth-section-left {
+    background-image: url(../image/cat-men.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    right:-20vh;
+}
+.eighth-section-right {
+    background-image: url(../image/cat-women.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    right:-20vh;
+}
+.eighth-section-text {
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+    width: 74vh;
+    height: 6.5vh;
+    display: grid;
+    align-content: center;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    left:2vh;
+    top: 70vh;
+}
+.eighth-section-text:hover {
+    background-color:white;
+    transition-duration: 0.4s;
+}
+.eighth-section-products {
+    color: rgb(100, 100, 100);
+}
+
+/* =============== Styling of quick-view =============== */
+
+.TDN {
+    text-decoration: none;
+}
+.quickview {
+    z-index: 1001;
+    position: relative;
+    left:0;
+    width: 98.9vw;
+    height: 100vh;
+    background-color: rgba(45, 45, 45, 0.7);
+}
+.quickview {
+    z-index: 1001;
+    position: absolute;
+    left:17.5vw;
+    top:10vh;
+    width: 65vw;
+    height: 80vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.quickview-image {
+    background-image: url(../image/Men4.jpg);
+    background-size: cover;
+}
+.quickview-details .x {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: -40px;
+    top: -10px;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: 0 0 5px gray;
+    cursor:pointer;
+}
+.quickview-details {
+    margin:0 2vw;
+    position: relative;
+}
+.quickview-line {
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+.chose-color a {
+    border:1px solid rgb(190, 190, 190) ;
+    color: rgb(150, 150, 150);
+    padding:3px 10px;
+}
+.clear {
+    margin-top: 2vh;
+}
+.quantity-buttons {
+    margin-top: 2vh;
+}
+.quantity-buttons span a {
+    border:1px solid rgb(199, 199, 199) ;
+    padding:0.4vh 0.7vw;
+    color:black;
+    margin-left: -5px;
+}
+/* .quantity-buttons {
+    margin-top: 8vh;
+} */
+.add-to-card{
+    color: white;
+    background-color: rgb(127,127,127);
+    display: inline-block;
+    width: 10vw;
+    height: 4.75vh;
+    text-align: center;
+    padding-top: 0.6vh;
+    margin-left: 1vw;
+}
+.view-cart {
+    color: black;
+    font-size: 0.85em;
+}

@@ -1,0 +1,62 @@
+[
+    {
+       "id": 1,
+        "name": "T-Shirt Name 1",
+        "image": "../image/T-ShirtName1.jpg",
+        "price": 20
+    },
+    {
+        "id": 2,
+        "name": "T-Shirt Name 2",
+        "image": "../image/T-ShirtName2.jpg",
+        "price": 36
+    },
+    {
+        "id": 3,
+        "name": "T-Shirt Name 3",
+        "image": "../image/T-ShirtName3.jpg",
+        "price": 27
+    },
+    {
+        "id": 4,
+        "name": "T-Shirt Name 4",
+        "image": "../image/T-ShirtName4.jpg",
+        "price": 34
+    },
+    {
+        "id": 5,
+        "name": "T-Shirt Name 5",
+        "image": "../image/T-ShirtName5.jpg",
+        "price": 19
+    },
+    {
+        "id": 6,
+        "name": "T-Shirt Name 6",
+        "image": "../image/T-ShirtName6.jpg",
+        "price": 42
+    },
+    {
+        "id": 7,
+        "name": "T-Shirt Name 7",
+        "image": "../image/T-ShirtName7.jpg",
+        "price": 22
+    },
+    {
+        "id": 8,
+        "name": "T-Shirt Name 8",
+        "image": "../image/T-ShirtName8.jpg",
+        "price": 39
+    },
+    {
+        "id": 9,
+        "name": "T-Shirt Name 9",
+        "image": "../image/T-ShirtName9.jpg",
+        "price": 25
+    },
+    {
+        "id": 10,
+        "name": "T-Shirt Name 10",
+        "image": "../image/T-ShirtName10.jpg",
+        "price": 28
+    }
+]

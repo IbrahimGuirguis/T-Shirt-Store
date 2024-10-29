@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.container h1{
+    padding:0 0 0 15vw;
+    width: 50%;
+    font-size: 3em;
+}
+.wonderfull-color{
+    color:rgb(191, 177, 175);
+}
+#form-container {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 25vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 5px;
+    padding:10vh 0 0 1.5vw;
+    background-color: rgb(250,237,235);
+}
+form input{ 
+    display: block;
+    width: 18vw;
+    height: 6vh;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 7.5px;
+    margin:2vh 0 0 2vw;
+}
+.forget-password{
+    text-align: center;
+    margin-top: 2vh;
+}
+.forget-password a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2vh;
+}
+.line{
+    display: inline-block;
+    width: 8vw;
+    border-bottom: 1px solid lightgray;
+}
+.submit-button{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+.google, .facebook{
+    background-color: white;
+    width: 18vw;
+    height: 6vh;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 7.5px;
+    margin:3vh 0 0 2vw;
+}
+.m-r{
+    margin-right: 1vw;
+}

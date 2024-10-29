@@ -1,0 +1,318 @@
+.product-container{
+    margin: 5vh 13vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.left .left-upper1{
+    height: 95vh;
+    background-image: url(../image/T-ShirtName1.jpg);
+    background-size: cover;
+    margin-bottom: 3.5vh;
+}
+.left .left-upper2{
+    height: 95vh;
+    background-image: url(../image/T-ShirtName2.jpg);
+    background-size: cover;
+    margin-bottom: 3.5vh;
+}
+.left .left-upper3{
+    height: 95vh;
+    background-image: url(../image/T-ShirtName3.jpg);
+    background-size: cover;
+    margin-bottom: 3.5vh;
+}
+.left .left-upper4{
+    height: 95vh;
+    background-image: url(../image/T-ShirtName4.jpg);
+    background-size: cover;
+    margin-bottom: 3.5vh;
+}
+.left .left-upper5{
+    height: 95vh;
+    background-image: url(../image/T-ShirtName5.jpg);
+    background-size: cover;
+    margin-bottom: 3.5vh;
+}
+.left .left-upper6{
+    height: 95vh;
+    background-image: url(../image/T-ShirtName6.jpg);
+    background-size: cover;
+    margin-bottom: 3.5vh;
+}
+.left .left-upper7{
+    height: 95vh;
+    background-image: url(../image/T-ShirtName7.jpg);
+    background-size: cover;
+    margin-bottom: 3.5vh;
+}
+.left .left-upper8{
+    height: 95vh;
+    background-image: url(../image/T-ShirtName8.jpg);
+    background-size: cover;
+    margin-bottom: 3.5vh;
+}
+.left .left-upper9{
+    height: 95vh;
+    background-image: url(../image/T-ShirtName9.jpg);
+    background-size: cover;
+    margin-bottom: 3.5vh;
+}
+.left .left-upper10{
+    height: 95vh;
+    background-image: url(../image/T-ShirtName10.jpg);
+    background-size: cover;
+    margin-bottom: 3.5vh;
+}
+.left .left-lower{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.left-lower .image1,
+.left-lower .image2,
+.left-lower .image3{
+    height: 45vh;
+    width: 17.41vw;
+    background-size: cover;
+}
+
+.left-lower .image1{
+    background-image: url(../image/Pink-TShirt.jpg);
+}
+.left-lower .image2{
+    background-image: url(../image/Black-TShirt.jpg);
+}
+.left-lower .image3{
+    background-image: url(../image/White-TShirt.jpg);
+}
+.margin-bottom{
+    margin-bottom: 2vh;
+}
+.margin-top{
+    margin-top: 2vh;
+}
+.color-btn{
+    width: 5vw;
+    height: 4.5vh;
+    border: 1px solid rgb(202, 200, 200);
+    background-color: white;
+}
+.shopping-cart-btn{
+    padding:0.65vh 0.75vw;
+    background-color: white;
+    border: 1px solid rgb(202, 200, 200);
+    margin-left: -5px;
+}
+.add-to-card-btn{
+    width: 8vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    border-style: none;
+    margin-left: 1vw;
+}
+.product-container .right{
+    margin-left: 3.5vw;
+    position: sticky;
+}
+.right .next{
+    position: absolute;
+    right:0;
+    border: 1px solid gray;
+    padding: 0.35vh 0.5vw;
+    color: black;
+}
+.right .back{
+    position: absolute;
+    right: 3vw;
+    border: 1px solid gray;
+    padding: 0.35vh 0.5vw;
+    color: black;
+}
+#description-content1, #show-description1,
+#description-content2, #show-description2,
+#description-content3, #show-description3 {
+    padding: 10px;
+    border-top: solid 1px #eaeaea;
+    border-bottom: solid 1px #eaeaea;
+}
+#description-content1,
+#description-content2,
+#description-content3 {
+    display: none;
+}
+.fa-plus{
+    position: absolute;
+    right:1vw;       
+}
+p.line {
+    width: 32.5vw;
+    border-bottom: 1px solid rgb(194, 193, 193);
+    margin: 3vh 0;
+}
+.gray-color{
+    color:rgb(129,129,129);
+}
+.d-inline-block h6{
+    display: inline-block;
+}
+
+#description-content2 table tr td{
+    border: 1px solid rgb(219, 219, 219);
+    padding: 5px;
+    width: 31.5vw;
+    gap: -5px;
+}
+
+.description-content3 form {
+    border: 1px solid rgb(190, 190, 190);
+    display: inline-block;
+    padding: 10px;
+}
+.input-fields{
+    display: flex;
+    margin-bottom: 2vh;
+}
+.input-fields div{
+    margin-right: 1vw;
+}
+.input-fields div input {
+    width: 14.75vw;
+    height: 6vh;
+    padding: 10px;
+}
+.submit{
+    background-color: black;
+    color: white;
+    width: 7.5vw;
+    height: 6vh;
+    border-style: none;
+    margin-top: 2vh;
+}
+/* .rating span i:hover{
+    background-color: rgb(129,129,129);
+    display: inline;
+}  */
+
+/* =============== Styling of products section =============== */
+.products-section-header {
+    margin: 8vh 0 0 12.5vw;
+}
+.summer {
+    color:rgb(75, 75, 75);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.products-section-header {
+    font-size: 2.5em;
+    text-align: start;
+}
+.products-section-lower {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:2.8vh;
+    font-size: 0.85em;
+}
+.products-container {
+    position: relative;
+    width: 270px;
+    height: 329px;
+    background-size: cover;
+    transition-duration: 0.75s;
+}
+.product1 {
+    background-image: url(../image/T-ShirtName1.jpg);
+}
+.product1:hover {
+    background-image: url(../image/Pink-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.product2 {
+    background-image: url(../image/T-ShirtName2.jpg);
+}
+.product2:hover {
+    background-image: url(../image/White-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.product3 {
+    background-image: url(../image/T-ShirtName3.jpg);
+}
+.product3:hover {
+    background-image: url(../image/Black-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.product4 {
+    background-image: url(../image/T-ShirtName4.jpg);
+}
+.product4:hover {
+    background-image: url(../image/White-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.product6 {
+    background-image: url(../image/T-ShirtName6.jpg);
+}
+.product6:hover {
+    background-image: url(../image/Pink-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.product7 {
+    background-image: url(../image/T-ShirtName7.jpg);
+}
+.product7:hover {
+    background-image: url(../image/White-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.product8 {
+    background-image: url(../image/T-ShirtName8.jpg);
+}
+.product8:hover {
+    background-image: url(../image/Black-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.product9 {
+    background-image: url(../image/T-ShirtName9.jpg);
+}
+.product9:hover {
+    background-image: url(../image/White-TShirt.jpg);
+    transition-duration: 0.75s;
+}
+.shopping-product, .shopping-view{
+    display: none;
+    border-style: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.shopping-view i {
+    padding-left: 4px;
+}
+.products-container:hover .shopping-product, .products-container:hover .shopping-view  {
+    display: inline-block; 
+    position: absolute;
+    right:12.5px; 
+    top:12.5px; 
+    width: 23px; 
+    height: 23px;
+    color: rgb(40, 40, 40); 
+    background-color: whitesmoke; 
+    border-radius: 50px; 
+    padding:2px 0 0 0;
+    transition-duration: 0.5s;
+}
+.products-container:hover .shopping-view {
+    right:12.5px; 
+    top:50px; 
+}
+.men-women {
+    color:rgb(190, 190, 190);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 1.75vh;
+}
+
+.product-price {
+    color:rgb(100, 100, 100);
+}
+.men-women, .product-name, .product-price {
+    margin-left: 2vh;
+}
