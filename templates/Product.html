@@ -1,0 +1,221 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block content %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{posted_product.name}}</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static '/css/Products.css' %}">
+     <!-- font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+            $("#description-content1").show();
+            $("#show-description1").click(function(){
+                $("#description-content1").slideToggle('0.25s');
+            });
+            $("#show-description2").click(function(){
+                $("#description-content2").slideToggle('0.25s');
+            });
+            $("#show-description3").click(function(){
+                $("#description-content3").slideToggle('0.25s');
+            });
+        });
+    </script>
+
+</head>
+<body>
+    
+    {% include 'navbar.html' %}
+
+    <!-- product-container -->
+    <div class="product-container">
+        <div class="left">
+            <div class="left-upper1" style="background-image:url('{{posted_product.image.url}}');"></div>
+            <div class="left-lower">
+                <div class="image1"></div>
+                <div class="image2"></div>
+                <div class="image3"></div>
+            </div>
+        </div>
+        <div class="right">
+            <a class="next" href=""><i class="fa-solid fa-angle-up fa-rotate-90"></i></a>
+            <a class="back" href=""><i class="fa-solid fa-angle-up fa-rotate-270"></i> </a>
+            
+            <h5 class="gray-color">{{posted_product.category}}</h5>
+            <h1>{{posted_product.name}}</h1>
+            <h3>${{posted_product.price}}</h3>
+            <h5 class="gray-color">& Free Shipping
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus interdum eros. In blandit velit a lacus laoreet dictum. Maecenas vel vulputate nulla. Ut nec enim vel tortor aliquet varius.</h5>
+            <h5 class="gray-color">& Free Shipping
+            <h5 class="gray-color margin-top margin-bottom">Color</h5>
+            <div class="gray-color">
+                <button class="color-btn gray-color">Black</button>
+                <button class="color-btn gray-color">Orange</button>
+                <button class="color-btn gray-color">White</button>
+            </div>
+            <!-- <h5 class="gray-color margin-top margin-bottom">Clear</h5> -->
+            <p></p>
+            <!-- <h3>$33.00</h3> -->
+            <div style="margin: 3vh 0;">
+                <button class="shopping-cart-btn gray-color">-</button>
+                <button class="shopping-cart-btn gray-color">1</button>
+                <button class="shopping-cart-btn gray-color">+</button>
+                <button class="add-to-card-btn">Add to Card</button>
+            </div>
+            <div class="gray-color d-inline-block">
+                <h6>SKU: N/A</h6> 
+                <h6>Category: <span style="color: black;">{{posted_product.category}}</span></h6>
+            </div>
+            <div>
+                <div id="show-description1">Description<i class="fa-solid fa-plus"></i></div>
+                <div id="description-content1" style="padding:3vh 0;">
+                    <h5>ABOUT THE PRODUCT</h5>
+                    <h5 class="gray-color">Our T-Shirts are lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h5>
+                    <h5 class="gray-color"><i class="far fa-dot-circle"></i> 100% Cotton</h5>
+                    <h5 class="gray-color"><i class="far fa-dot-circle"></i> 260gsm</h5>
+                    <h5 class="gray-color"><i class="far fa-dot-circle"></i> Breathable Fabric</h5>
+                    <p class="line"></p>
+                    <h5>SIZE & FIT</h5>
+                    <h5 class="gray-color"><i class="far fa-dot-circle"></i> Model is wearing size M and is 6'1"</h5>
+                    <h5 class="gray-color"><i class="far fa-dot-circle"></i> Standard fit for a relaxed, easy feel</h5>
+                    <p class="line"></p>
+                    <h5>SIZE & FIT</h5>
+                    <h5 class="gray-color">Free standard delivery on orders over $60.</h5>
+                    <h5 class="gray-color"><i class="far fa-dot-circle"></i> You can return your order for any reason, free of charge, within 30 days</h5>
+                    <h5 class="gray-color"><i class="far fa-dot-circle"></i> We also offer a Free-of-Charge shipping label</h5>
+                </div>
+            </div>
+            <div>
+                <div id="show-description2">Additional information<i class="fa-solid fa-plus"></i></div>
+                <div id="description-content2">
+                    <table>
+                        <tr>
+                            <td colspan="2">Color</td>
+                            <td colspan="1"> Black, Orange, White</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div id="show-description3">Reviews (0)<i class="fa-solid fa-plus"></i></div>
+                <div id="description-content3">
+                    <!-- <h5 class="gray-color">There are no reviews yet.</h5> -->
+                    <form method="POST" action="" class="gray-color">
+                        {% csrf_token %}
+                        <h3 class="margin-bottom">Be the first to review “{{posted_product.name}}”</h3>
+                        <h4 class="margin-bottom">Your email address will not be published. Required fields are marked *</h4>
+                        <div class="rating margin-bottom">Your rating * 
+                            <span>
+                                {% comment %} <input type="radio" name="star1" id="star1">
+                                <label for="star1"></label>
+                                <input type="radio" name="star2" id="star2">
+                                <label for="star2"></label>
+                                <input type="radio" name="star3" id="star3">
+                                <label for="star3"></label>
+                                <input type="radio" name="star4" id="star4">
+                                <label for="star4"></label>
+                                <input type="radio" name="star5" id="star5">
+                                <label for="star5"></label> {% endcomment %}
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </span>
+                        </div>
+                        <h4>Your review *</h4>
+                        <textarea name="customer-comment" id="customer-comment" cols="73" rows="6"></textarea>
+                        <div class="input-fields">
+                            <div>
+                                <div>
+                                    <label for="customer-name">Name *</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="customer-name" id="customer-name">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div>
+                                    <label for="customer-email">Email *</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="customer-email" id="customer-email">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <input type="checkbox" value="">
+                        Save my name, email, and website in this browser for the next time I comment.
+                        <div>
+                            <input type="submit" class="submit">
+                        </div>
+                    </form>
+                </div>
+                <!-- End of description-content3 -->
+            </div>
+            
+        </div>
+    </div>
+    <!-- End of product-container -->
+
+    <!-- products-section -->
+    <div id="products-section">
+        <h1 class="products-section-header">Related products</h1>
+        <!-- products-section-lower -->
+        <div class="products-section-lower">
+            <div>
+                <div class="products-container product1" >
+                    <button href="" class="shopping-product"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <a href="" class="shopping-view" open><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <h5 class="men-women">MEN</h5>
+                <h2 class="product-name">T-Shirt Name 10</h2>
+                <h5 class="product-price">$33.00 – $36.00</h5>    
+            </div>
+            <div>
+                <div class="products-container product2">
+                    <button href="" class="shopping-product"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <a href="" class="shopping-view"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <h5 class="men-women">WOMEN</h5>
+                <h2 class="product-name">T-Shirt Name 9</h2>
+                <h5 class="product-price">$23.00 – $28.00</h5>
+            </div>
+            <div>
+                <div class="products-container product3">
+                    <button href="" class="shopping-product"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <a href="" class="shopping-view"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <h5 class="men-women">MEN</h5>
+                <h2 class="product-name">T-Shirt Name 8</h2>
+                <h5 class="product-price">$21.00 – $25.00</h5>
+            </div>
+            <div>
+                <div class="products-container product4">
+                    <button href="" class="shopping-product"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <a href="" class="shopping-view"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <h5 class="men-women">WOMEN</h5>
+                <h2 class="product-name">T-Shirt Name 7</h2>
+                <h5 class="product-price">$36.00 – $39.00</h5>
+            </div>
+        </div>
+        <!-- End of products-section-lower -->
+    </div>
+    <!-- End of products-section -->
+    {% endblock content %}
+
+    {% include 'footer.html' %}
+
+</body>
+</html>

@@ -14,6 +14,9 @@
     width: 3vw;
     margin:3vh 0 4vh 48vw;
 }
+.head-paragraph{
+    padding: 0 25vw;
+}
 .form-container{
     margin: 5vh 3vw;
     display: flex;
@@ -37,6 +40,7 @@
 }
 .cg{
     color: rgb(95, 95, 95);
+    padding-right: 10vw;
 }
 .mb {
     margin-bottom: 3.5vh;

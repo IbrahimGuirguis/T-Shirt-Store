@@ -9,60 +9,7 @@
     background-size: cover;
     margin-bottom: 3.5vh;
 }
-.left .left-upper2{
-    height: 95vh;
-    background-image: url(../image/T-ShirtName2.jpg);
-    background-size: cover;
-    margin-bottom: 3.5vh;
-}
-.left .left-upper3{
-    height: 95vh;
-    background-image: url(../image/T-ShirtName3.jpg);
-    background-size: cover;
-    margin-bottom: 3.5vh;
-}
-.left .left-upper4{
-    height: 95vh;
-    background-image: url(../image/T-ShirtName4.jpg);
-    background-size: cover;
-    margin-bottom: 3.5vh;
-}
-.left .left-upper5{
-    height: 95vh;
-    background-image: url(../image/T-ShirtName5.jpg);
-    background-size: cover;
-    margin-bottom: 3.5vh;
-}
-.left .left-upper6{
-    height: 95vh;
-    background-image: url(../image/T-ShirtName6.jpg);
-    background-size: cover;
-    margin-bottom: 3.5vh;
-}
-.left .left-upper7{
-    height: 95vh;
-    background-image: url(../image/T-ShirtName7.jpg);
-    background-size: cover;
-    margin-bottom: 3.5vh;
-}
-.left .left-upper8{
-    height: 95vh;
-    background-image: url(../image/T-ShirtName8.jpg);
-    background-size: cover;
-    margin-bottom: 3.5vh;
-}
-.left .left-upper9{
-    height: 95vh;
-    background-image: url(../image/T-ShirtName9.jpg);
-    background-size: cover;
-    margin-bottom: 3.5vh;
-}
-.left .left-upper10{
-    height: 95vh;
-    background-image: url(../image/T-ShirtName10.jpg);
-    background-size: cover;
-    margin-bottom: 3.5vh;
-}
+
 .left .left-lower{
     display: flex;
     flex-wrap: wrap;
@@ -163,6 +110,34 @@ p.line {
     padding: 5px;
     width: 31.5vw;
     gap: -5px;
+}
+/* 
+.rating input{
+    display: none;
+} 
+.rating label{
+    display: block;
+    cursor: pointer;
+    background-color: #ccc;
+}
+.rating label::before{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    color: rgb(245,175,41);
+    top:0;
+    opacity: 1;
+    transition: 0.5s;
+    text-overflow: 0 1px 2.5px rgba(0,0,0,0.5);
+}
+.rating label:hover:after, 
+.rating label:checked ~ label:after{
+    opacity: 1;
+} */
+
+.checked:hover {
+    color: rgb(245,175,41);
 }
 
 .description-content3 form {

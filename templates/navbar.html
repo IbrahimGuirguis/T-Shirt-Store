@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static '/css/Common.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigation bar section -->
+    <nav style="padding: 0 3vw; border-bottom:1px solid rgb(241,235,235);">
+        <div>
+            <a class="nav-left-items" href="{% url 'buyt-shirts' %}">BUY T-SHIRTS</a>
+            <a class="nav-left-items" href="{% url 'women' %}">WOMEN</a>
+            <a class="nav-left-items" href="{% url 'men' %}">MEN</a>
+            <a class="nav-left-items" href="{% url 'about' %}">ABOUT</a>
+            <a class="nav-left-items" href="{% url 'contact' %}">CONTACT</a>
+        </div>
+        <div><a href="{% url 'home' %}"><img id="logo" src="{% static '/image/Logo.png' %}" alt="Logo"></a></div>
+        <div>
+            <a class="nav-right-items" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="nav-right-items shopping-cart" href="{% url 'shoppingcart' %}"><span id="total-price" style="margin-right:1vw;"><b>$0.00</b></span><i class="fa-solid fa-cart-shopping"></i><span id="product-counter"><b>0</b></span></a>
+            <a href="{% url 'login' %}" style="font-size: 0.85em;">LOG IN</a>
+        </div>
+    </nav>
+    <!-- End of navigation-bar section -->
+
+</body>
+</html>

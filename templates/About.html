@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About T-Shirts Store</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static '/css/About.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    {% include 'navbar.html' %}
+
+    {% block content %}
+        <!-- about-container -->
+        <div id="about-container">
+            <div class="text-center">
+                <h1>About</h1>
+                <p class="line"></p>
+                <p><b>{{about_us.about_intro_first_paragraph}}</b></p>
+                <p class="p-text">{{about_us.about_intro_second_paragraph}}</p>
+            </div>
+
+            <div class="about-container-image">
+                <div class="about-container-image-first">
+                    <h5>{{about_us.about_image_left_text_head}}</h5>
+                    <h1>{{about_us.about_image_left_text_paragraph}}</h1>
+                    <p class="white-line"></p>
+                </div>
+                <div>
+                    <h3><b>{{about_us.about_image_right_first_paragraph}}</b></h3>
+                    <h3><b>{{about_us.about_image_right_second_paragraph}}</b></h3>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h1 style="font-size: 2.25em;">{{about_us.about_middle_head}}</h1>
+                <p class="line"></p>
+                <p class="p-text" style="font-size: 0.85em;">{{about_us.about_middle_paragraph}}</p>
+            </div>
+
+            <div class="last-section">
+                <div class="last-section-left">
+                    <h1>{{about_us.about_last_section_head}}</h1>
+                    <h4>{{about_us.about_last_section_first_paragraph}}</h4>
+                    <h5>{{about_us.about_last_section_second_paragraph}}</h5>
+                </div>
+                <div class="last-section-right"></div>
+            </div>
+        </div>
+        <!-- End of about-container -->
+    {% endblock content %}
+
+    {% include 'footer.html' %}
+
+</body>
+</html>

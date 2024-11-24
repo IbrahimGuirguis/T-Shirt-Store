@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About T-Shirts Store</title>
+    <link rel="stylesheet" href="{% static '/css/ShoppingProducts.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+    
+    <!-- container -->
+    <div class="container">
+        <div class="category">
+            <a class="home-word" href="Home.html">Home / </a>
+            <span>Women</span>
+            <h1>Women</h1>
+            <h5>Showing all 5 results</h5>
+        </div>
+        <div class="products">
+            {% block content %}
+                {% for product in women_products %}
+                    {% if product.category == 'Women' %}
+                    <div>
+                        <div class="products-container product" style="background-image:url({{product.image.url}});">
+                            <button href="" class="shopping-product"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <a href="{% url 'product_details' post_id=product.pk %}" class="shopping-view"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                        <h5 class="common-t">{{product.category}}</h5>
+                        <h2 class="common-t">{{product.name}}</h2>
+                        <h5 class="common-t common-price">${{product.price}}</h5>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            {% endblock %}
+        </div>
+    </div>
+    <!-- End of container -->
+
+    {% include 'footer.html' %}
+
+</body>
+</html>

@@ -14,11 +14,13 @@
 }
 /* =============== Styling of navigation-bar =============== */
 nav{
+    /* margin: 0 3vw; */
     height: 12vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    /* border-bottom: 1px solid lightgray; */
 }
 nav div a{
     text-decoration: none;
@@ -141,99 +143,16 @@ footer {
     font-family: 'Poppins', sans-serif;
     font-size: 0.85em;
 }
-/* =============== Styling of quickview section =============== */
-/* @keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+/*========================*/
+.review-item{
+    margin: 5vh 0;
+    display: flex;
+    border: 1px solid black;
 }
-@keyframes fade-out {
-    100% {
-        opacity: 0;
-    }
-    0% {
-        opacity: 1;
-    }
+.review-item img{
+    width: 200px;
+    height: 250px;
 }
-
-@keyframes silde-up {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
+.review-item div{
+    margin:2vh 0 2vh 3vw;
 }
-
-.quickview[open] {
-    animation: fade-in 0.5s forwards;
-} */
-
-
-/* .TDN {
-    text-decoration: none;
-}
-.quickview {
-    z-index: 1001;
-    position: absolute;
-    left:0;
-    width: 98.9vw;
-    height: 100.75vh;
-    background-color: rgba(45, 45, 45, 0.7);
-    display: none;
-}
-.quickview-product {
-    z-index: 1001;
-    position: absolute;
-    left:17.5vw;
-    top:10vh;
-    width: 65vw;
-    height: 80vh;
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.quickview-image {
-    background-image: url(../image/Men4.jpg);
-    background-size: cover;
-}
-.quickview-details{
-    margin:0 2vw;
-}
-.quickview-line{
-    border-bottom: 1px solid rgb(215, 215, 215);
-}
-.chose-color a{
-    border:1px solid rgb(190, 190, 190) ;
-    color: rgb(150, 150, 150);
-    padding:3px 10px;
-}
-.clear{
-    margin-top: 2vh;
-}
-.quantity-buttons {
-    margin-top: 2vh;
-}
-.quantity-buttons span a{
-    border:1px solid rgb(199, 199, 199) ;
-    padding:0.4vh 0.7vw;
-    color:black;
-    margin-left: -5px;
-}
-.add-to-card{
-    color: white;
-    background-color: rgb(127,127,127);
-    display: inline-block;
-    width: 10vw;
-    height: 4.75vh;
-    text-align: center;
-    padding-top: 0.6vh;
-    margin-left: 1vw;
-}
-.view-cart {
-    color: black;
-    font-size: 0.85em;
-} */

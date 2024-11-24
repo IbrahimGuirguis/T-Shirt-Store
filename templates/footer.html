@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static '/css/Common.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Footer section -->
+    <footer style="margin: 6vh 3vw;">
+        <div id="footer-upper">
+            <h1>Subscribe To Get Offers In Your Inbox</h1>
+            <h5>Lorem ipsum dolor sit amet, adipiscing elit sed do eiusmod condimentum</h5>
+            <form action="">
+                <input class="footer-input-form" type="text" placeholder="Your email address...">
+                <input class="footer-submit-form" type="submit" value="Subscribe">
+            </form>
+            <div class="footer-links">
+                <a href="{% url 'buyt-shirts' %}">Buy T-Shirts</a>
+                <a href="{% url 'women' %}">Wonem</a>
+                <a href="{% url 'men' %}">Men</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+            <div class="plat-forms">
+                <span class="plat-forms-icon"><i class="fa-brands fa-facebook-f"></i></span>
+                <span class="plat-forms-icon"><i class="fa-brands fa-twitter"></i></span>
+                <span class="plat-forms-icon"><i class="fa-brands fa-instagram"></i></span>
+            </div>
+        </div>
+        <div id="footer-lower">Copyright © 2023 T-Shirts Store | Powered by T-Shirts Store</div>    
+    </footer>
+    <!-- End of footer section -->
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About T-Shirts Store</title>
+    <link rel="stylesheet" href="{% static '/css/Contact.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+    
+    <div class="text-center">
+        <h1>Contact</h1>
+        <p class="line"></p>
+        <p class="head-paragraph"><b>{{contact_info.contact_head_paragraph}}</b></p>
+    </div>
+    
+    <div class="form-container">
+        <div class="form-container-text">
+            <h1 class="mb">{{contact_info.contact_head}}</h1>
+            <h5 class="mb cg">{{contact_info.contact_paragraph}}</h5>
+            <a class="mb" href=""><h5><i class="fa-solid fa-location-dot"></i> {{contact_info.contact_map_info}}</h5></a>
+            <a class="mb" href=""><h5><i class="fa-solid fa-envelope"></i> {{contact_info.contact_email}}</h5></a>
+            <h5><i class="fa-solid fa-phone"></i> {{contact_info.contact_number}}</h5>
+        </div>
+        <div class="form-container-form">
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input class="name" type="text" placeholder="First Name" name="first_name">
+                <input class="name" type="text" placeholder="Last Name" name="last_name">
+                <input class="email block" type="text" placeholder="Your email address..." name="email">
+                <textarea class="message block" placeholder="Message..." name="message"></textarea>
+                <input class="submit" type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+
+    <div class="maps">
+        <iframe src="{{contact_info.contact_map}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    {% include 'footer.html' %}
+
+</body>
+</html>
